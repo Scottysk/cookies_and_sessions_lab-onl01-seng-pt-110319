@@ -4,6 +4,5 @@ Rails.application.routes.draw do
   root 'products#index'
   
   post '/products/new', to: 'products#add'
-  post '/', to :'products#add'
   
 end
