@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   
   post '/products/new', to: 'products#add'
   
+  post '/', to: 'products#add'
 end
