@@ -3,11 +3,12 @@
 <ul>
   <% cart.each do |product| %>
   <li> <%= product %> </li>
+  <% end %>
 </ul>
 
 <h2> Add a product </h2>
 
 <%= form_tag(method: "post") do %>
 <%= text_field_tag(:product) %>
-<%= button_tag("add to cart") %>
+<%= submit_tag("add to cart") %>
 <% end %>
